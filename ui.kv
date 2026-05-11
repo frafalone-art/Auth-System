@@ -1,0 +1,205 @@
+ScreenManager:
+    StartScreen:
+    LoginScreen:
+    RegisterScreen:
+    ForgotScreen:
+    MainScreen:
+
+
+<StartScreen>:
+    name: "start"
+
+    MDScreen:
+
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: "30dp"
+            spacing: "20dp"
+            pos_hint: {"center_y": .75}
+
+            MDCard:
+                size_hint_y: None
+                height: "190dp"
+                padding: "25dp"
+                spacing: "25dp"
+                orientation: "vertical"
+                radius: [22]
+                elevation: 6
+
+                MDLabel:
+                    text: "Benvenuto"
+                    halign: "center"
+
+                MDRaisedButton:
+                    text: "Registrati"
+                    on_release: app.switch_screen("register")
+
+                MDRaisedButton:
+                    text: "Accedi"
+                    on_release: app.switch_screen("login")
+
+
+<LoginScreen>:
+    name: "login"
+
+    MDScreen:
+
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: "30dp"
+            spacing: "20dp"
+
+            MDCard:
+                orientation: "vertical"
+                padding: "25dp"
+                spacing: "15dp"
+                radius: [22]
+
+                MDLabel:
+                    text: "Accesso"
+                    halign: "center"
+
+                MDTextField:
+                    hint_text: "Username"
+
+                MDTextField:
+                    hint_text: "Password"
+                    password: True
+
+                MDRaisedButton:
+                    text: "Accedi"
+
+                MDTextButton:
+                    text: "Credenziali dimenticate?"
+                    on_release: app.switch_screen("forgot")
+
+                MDTextButton:
+                    text: "Indietro"
+                    on_release: app.switch_screen("start")
+
+
+<RegisterScreen>:
+    name: "register"
+
+    MDScreen:
+
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: "30dp"
+
+            MDCard:
+                orientation: "vertical"
+                padding: "25dp"
+                spacing: "15dp"
+                radius: [22]
+
+                MDLabel:
+                    text: "Registrazione"
+                    halign: "center"
+
+                MDTextField:
+                    hint_text: "Username"
+
+                MDTextField:
+                    hint_text: "Email"
+
+                MDTextField:
+                    hint_text: "Password"
+                    password: True
+
+                MDRaisedButton:
+                    text: "Crea account"
+
+                MDTextButton:
+                    text: "Indietro"
+                    on_release: app.switch_screen("start")
+
+
+<ForgotScreen>:
+    name: "forgot"
+
+    MDScreen:
+
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: "30dp"
+
+            MDCard:
+                orientation: "vertical"
+                padding: "25dp"
+                spacing: "15dp"
+                radius: [22]
+
+                MDLabel:
+                    text: "Recupero"
+
+                MDTextField:
+                    hint_text: "Email"
+
+                MDRaisedButton:
+                    text: "Invia"
+
+                MDTextButton:
+                    text: "Indietro"
+                    on_release: app.switch_screen("login")
+
+
+<MainScreen>:
+    name: "main"
+
+    MDScreen:
+
+        MDNavigationLayout:
+
+            ScreenManager:
+
+                MDScreen:
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+
+                        MDTopAppBar:
+                            title: "SecureAuth"
+                            left_action_items: [["menu", lambda x: nav_drawer.set_state("open")]]
+
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            padding: "20dp"
+                            spacing: "18dp"
+
+                            MDRaisedButton:
+                                text: "Dashboard"
+
+                            MDRaisedButton:
+                                text: "Credenziali"
+
+                            MDRaisedButton:
+                                text: "Sicurezza"
+
+                            MDRaisedButton:
+                                text: "Activity"
+
+                            Widget:
+
+
+            MDNavigationDrawer:
+                id: nav_drawer
+
+                MDBoxLayout:
+                    orientation: "vertical"
+                    padding: "20dp"
+
+                    MDLabel:
+                        text: "Francesco Falone"
+
+                    OneLineListItem:
+                        text: "Credits"
+
+                    OneLineListItem:
+                        text: "Version 1.0"
+
+                    Widget:
+
+                    MDRaisedButton:
+                        text: "Logout"
+                        on_release: app.logout()
