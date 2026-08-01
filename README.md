@@ -2,7 +2,7 @@
 
 A full-stack authentication system built with Python, FastAPI, and Kivy, developed as a personal learning project to explore backend architecture, authentication systems, and secure software design.
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
+![SQLite](https://img.shields.io/badge/SQLite-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![Kivy](https://img.shields.io/badge/Kivy-UI-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
