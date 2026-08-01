@@ -5,7 +5,7 @@ A full-stack authentication system built with Python, FastAPI, and Kivy, develop
 [![Kivy](https://img.shields.io/badge/Kivy-UI-1da6e0?logo=kvlang)](https://kivy.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
-![License](https://img.shields.io/badge/License-Apache%202.0-blue)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
 
 
 Python • FastAPI • Kivy • SQLite • MIT License • Educational Project
