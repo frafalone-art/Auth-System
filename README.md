@@ -5,7 +5,7 @@ A full-stack authentication system built with Python, FastAPI, and Kivy, develop
 ![Kivy](https://img.shields.io/badge/Kivy-UI-1da6e0?logo=kivylang)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
-![License](https://img.shields.io/badge/License-MIT-green)
+![License](https://img.shields.io/badge/License-Apache%202.0-cyan)
 
 
 Python • FastAPI • Kivy • SQLite • MIT License • Educational Project
@@ -96,4 +96,4 @@ Francesco Falone — personal project to learn software engineering, backend dev
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the Apache License 2.0.
