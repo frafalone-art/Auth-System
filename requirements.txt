@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-sqlalchemy
-bcrypt
-pydantic
-kivy
-kivymd
-requests
