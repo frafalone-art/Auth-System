@@ -1,6 +1,7 @@
 fastapi
-unicorni
+uvicorn
 sqlalchemy
+passlib
 bcrypt
+python-jose
 pydantic
-requests
