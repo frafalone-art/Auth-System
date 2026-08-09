@@ -87,7 +87,7 @@ Package-based project organization
 
 ---
 
-🪟 Windows Release
+## 🪟 Windows Release
 
 Prebuilt Windows executables are available on the Releases page.
 
