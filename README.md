@@ -1,6 +1,7 @@
 # SecureAuth Python 🔐
 
-A full-stack authentication system built with Python, FastAPI, and Kivy, developed as a personal learning project to explore backend architecture, authentication systems, and secure software design.
+A full-stack authentication system built with Python, FastAPI, and Kivy, developed as a personal learning project to explore backend architecture, authentication systems, and secure software design.
+
 
 [![Kivy](https://img.shields.io/badge/Kivy-UI-1da6e0?logo=kvlang)](https://kivy.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -83,6 +84,27 @@ Input validation with Pydantic
 Rate limiting
 Secure coding practices
 Package-based project organization
+
+---
+
+🪟 Windows Release
+
+Prebuilt Windows executables are available on the Releases page.
+
+Download:
+
+AuthSystem_app.exe
+start_server.exe
+How to run
+Launch start_server.exe
+Wait until the console shows Uvicorn running on http://127.0.0.1:8000
+Keep the server window open
+Launch AuthSystem_app.exe
+
+Windows may display a SmartScreen warning the first time you open the executables.
+Click More info → Run anyway. This is normal for unsigned executables built with PyInstaller.
+
+---
 
 ## ⚠️ Disclaimer
 
