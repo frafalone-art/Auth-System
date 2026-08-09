@@ -1,0 +1,6 @@
+fastapi
+unicorni
+sqlalchemy
+bcrypt
+pydantic
+requests
