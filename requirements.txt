@@ -8,3 +8,5 @@ pydantic
 kivy
 kivymd
 requests
+httpx
+pytest
