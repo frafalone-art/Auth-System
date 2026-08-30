@@ -1,5 +1,5 @@
 # SecureAuth Python 🔐
-A full-stack authentication system built with Python, FastAPI, and Kivy, developed as a personal learning project to explore backend architecture, authentication systems, and secure software design.
+My first full-stack authentication system built with Python, FastAPI, and Kivy, developed as a personal learning project to explore backend architecture, authentication systems, and secure software design.
 
 [![Kivy](https://img.shields.io/badge/Kivy-UI-1da6e0?logo=kivy)](https://kivy.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
